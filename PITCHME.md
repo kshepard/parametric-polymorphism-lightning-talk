@@ -1,6 +1,8 @@
-# Parametric Polymorphism
+### Parametric Polymorphism
 
-### Restricting Implementations Even Further
+<br />
+
+#### Restricting Implementations Even Further
 
 ---
 

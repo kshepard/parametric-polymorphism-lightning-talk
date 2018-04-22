@@ -70,6 +70,21 @@ foo :: something -> something
 
 ---
 
+#### Let's Implement It
+
+```haskell
+foo :: a -> a
+```
+
+- Alright, the function takes an "a" and also returns an "a" |
+- Should be similar to the "Int -> Int" example |
+- Easy, we can just return any "a" |
+- Like "Int", we can just summon any old "a" from the void |
+- Except we don't know what "a" is, so how do we summon it? |
+- Hmmmmmm... |
+
+---
+
 #### Type-Kwon-Do Revisited
 
 - Implement the function with the following signature:

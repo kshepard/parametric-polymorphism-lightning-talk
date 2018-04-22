@@ -53,6 +53,23 @@ foo :: a -> a
 
 ---
 
+#### Enter Parametric Polymorphism
+
+```haskell
+foo :: a -> a
+
+foo :: b -> b
+
+foo :: something -> something
+```
+
+- These are all equivalent |
+- Important note: the first and second "a" must be the same type |
+- "foo :: a -> b" |
+  - "a" and "b" aren't necessarily the same thing |
+
+---
+
 #### Type-Kwon-Do Revisited
 
 - Implement the function with the following signature:

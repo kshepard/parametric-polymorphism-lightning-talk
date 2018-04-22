@@ -22,7 +22,7 @@ foo :: (x -> y) -> (y -> (w, z)) -> x -> w
 -- Function that takes an integer, and returns an integer
 foo :: Int -> Int
 
--- This might be a a square function:
+-- This might be a square function:
 foo i = i * i
 
 -- Or a doubling function
@@ -39,6 +39,17 @@ foo i = 42
 @[1-2,7-8](Double)
 @[1-2,10-11](Mod2)
 @[1-2,13-14](Constant)
+
+---
+
+#### Enter Parametric Polymorphism
+
+```haskell
+foo :: a -> a
+```
+
+- Here 'a' is a parametrically polymporhic type, which means it can represent any type. |
+- There's nothing special about 'a', except that it starts with a lowercase letter. |
 
 ---
 

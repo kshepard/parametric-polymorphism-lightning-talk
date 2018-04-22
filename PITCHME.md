@@ -6,34 +6,30 @@
 
 ---
 
-## A1
+### Type-Kwon-Do
 
-Test
+- Implement the function with the following signature:
 
----
-
-## A2
-
-- Test1 |
-- Test2 |
-- Test3 |
+```haskell
+foo :: (x -> y) -> (y -> (w, z)) -> x -> w
+```
 
 ---
 
-Haskell Code
+### Type-Kwon-Do Revisited
+
+- Implement the function with the following signature:
 
 ```haskell
 foo :: (x -> y) -> (y -> (w, z)) -> x -> w
 
-foo :: Int -> Int
+foo xToY yToWZ x = fst (yToWZ (xToY x))
 
-foo i = i * i
-
-foo i = 2 * i
+foo xToY yToWZ = fst . yToWZ . xToY
 ```
-
-@[1,1](Test1)
-@[3-7](Test2)
+@[1](Function signature)
+@[1,3](Implementation)
+@[1,5](Pointfree style)
 
 ---
 

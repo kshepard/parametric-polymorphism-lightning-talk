@@ -34,11 +34,11 @@ foo i = i `mod` 2
 -- Or it can return a constant
 foo i = 42
 ```
-@[1-2](Function signature)
-@[1-2,4-5](Square)
-@[1-2,7-8](Double)
-@[1-2,10-11](Mod2)
-@[1-2,13-14](Constant)
+@[1-2]
+@[1-2,4-5]
+@[1-2,7-8]
+@[1-2,10-11]
+@[1-2,13-14]
 
 ---
 
@@ -114,11 +114,11 @@ foo :: [a] -> [a]
 
 ```
 
-@[1](Const)
-@[3](One or the other)
-@[5](Evil head)
-@[7](Safe head)
-@[9](Something with list)
+@[1]
+@[3]
+@[5]
+@[7]
+@[9]
 
 ---
 
@@ -133,9 +133,9 @@ foo xToY yToWZ x = fst (yToWZ (xToY x))
 
 foo xToY yToWZ = fst . yToWZ . xToY
 ```
-@[1](Function signature)
-@[1,3](Implementation)
-@[1,5](Pointfree style)
+@[1]
+@[1,3]
+@[1,5]
 
 ---
 

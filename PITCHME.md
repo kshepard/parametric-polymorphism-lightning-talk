@@ -8,8 +8,9 @@
 
 #### Overview
 
-- Parametric Polymorphism: the concept of generic types |
-- Extra powerful when paired with immutability and purity |
+- Parametric Polymorphism: the concept of generic types
+- Extra powerful when paired with immutability and purity
+- First a-ha moment was with Type-Kwon-Do exercises in the book
 
 ---
 
@@ -35,9 +36,6 @@ foo i = i * i
 -- Or a doubling function
 foo i = 2 * i
 
--- Or maybe something like mod 2
-foo i = i `mod` 2
-
 -- Or it can return a constant
 foo i = 42
 ```
@@ -45,7 +43,6 @@ foo i = 42
 @[1-2,4-5]
 @[1-2,7-8]
 @[1-2,10-11]
-@[1-2,13-14]
 
 ---
 
@@ -55,8 +52,8 @@ foo i = 42
 foo :: a -> a
 ```
 
-- Here 'a' is a parametrically polymporhic type, which means it can represent any type. |
-- There's nothing special about 'a', except that it starts with a lowercase letter. |
+- Here 'a' is a parametrically polymporhic type, which means it can represent any type.
+- There's nothing special about 'a', except that it starts with a lowercase letter.
 
 ---
 
@@ -70,10 +67,10 @@ foo :: b -> b
 foo :: something -> something
 ```
 
-- These are all equivalent |
-- Important note: the first and second "a" must be the same type |
+- These are all equivalent
+- Important note: the first and second "a" must be the same type
 - "foo :: a -> b"
-  - "a" and "b" aren't necessarily the same thing |
+  - "a" and "b" aren't necessarily the same thing
 
 ---
 
@@ -87,7 +84,7 @@ foo :: a -> a
 - Should be similar to the "Int -> Int" example |
 - Easy, we can just return any "a" |
 - Like "Int", we can just summon any old "a" from the void |
-- Except we don't know what "a" is, so how do we summon it? |
+- Except we don't know what an "a" is, so how do we create one? |
 - Hmmmmmm... |
 
 ---
@@ -113,7 +110,7 @@ foo :: a -> a -> a
 
 foo :: a -> b -> a
 
-foo :: [a] -> Maybe a
+foo :: [a] -> [a]
 
 ```
 
@@ -139,10 +136,11 @@ foo xToY yToWZ x = fst (yToWZ (xToY x))
 
 ### Summing up
 
-- There's a cost of being specific |
-- The less we know about the types, the more we know about what it does |
-- The more we know about the types, the less we know about what it does |
-- Don't even need to look at the implementation: we know exactly what it does |
+- There are costs of being specific |
+  - Concrete types prevent reuse |
+  - And make it harder to reason about |
+- The less we know about the types, the more we know about what a function does |
+- The more we know about the types, the less we know about what a function does |
 - Purity + immutability + parametric polymorphism = reasoning superpowers |
 
 ---

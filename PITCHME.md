@@ -99,6 +99,28 @@ foo :: a -> a
 
 ---
 
+#### More examples
+
+```haskell
+foo :: a -> b -> a
+
+foo :: a -> a -> a
+
+foo :: [a] -> a
+
+foo :: [a] -> Maybe a
+
+foo :: [a] -> [a]
+
+```
+
+@[1](Const)
+@[3](One or the other)
+@[5](Evil head)
+@[7](Safe head)
+@[9](Something with list)
+
+---
 
 #### Type-Kwon-Do Revisited
 

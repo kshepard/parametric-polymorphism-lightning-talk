@@ -76,7 +76,7 @@ foo :: something -> something
 foo :: a -> a
 ```
 
-- Alright, the function takes an "a" and also returns an "a" |
+- The function takes an "a" and also returns an "a" |
 - Should be similar to the "Int -> Int" example |
 - Easy, we can just return any "a" |
 - Like "Int", we can just summon any old "a" from the void |
@@ -102,23 +102,17 @@ foo :: a -> a
 #### More examples
 
 ```haskell
-foo :: a -> b -> a
-
 foo :: a -> a -> a
 
-foo :: [a] -> a
+foo :: a -> b -> a
 
 foo :: [a] -> Maybe a
-
-foo :: [a] -> [a]
 
 ```
 
 @[1]
 @[3]
 @[5]
-@[7]
-@[9]
 
 ---
 
@@ -130,12 +124,9 @@ foo :: [a] -> [a]
 foo :: (x -> y) -> (y -> (w, z)) -> x -> w
 
 foo xToY yToWZ x = fst (yToWZ (xToY x))
-
-foo xToY yToWZ = fst . yToWZ . xToY
 ```
 @[1]
 @[1,3]
-@[1,5]
 
 ---
 

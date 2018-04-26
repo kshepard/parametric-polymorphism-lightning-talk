@@ -6,6 +6,13 @@
 
 ---
 
+#### Overview
+
+- Parametric Polymorphism: the concept of generic types |
+- Extra powerful when paired with immutability and purity |
+
+---
+
 #### Type-Kwon-Do
 
 - Implement the function with the following signature:
@@ -65,7 +72,7 @@ foo :: something -> something
 
 - These are all equivalent |
 - Important note: the first and second "a" must be the same type |
-- "foo :: a -> b" |
+- "foo :: a -> b"
   - "a" and "b" aren't necessarily the same thing |
 
 ---

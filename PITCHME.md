@@ -139,4 +139,14 @@ foo xToY yToWZ = fst . yToWZ . xToY
 
 ---
 
+### Summing up
+
+- There's a cost of being specific |
+- The less we know about the types, the more we know about what it does |
+- The more we know about the types, the less we know about what it does |
+- Don't even need to look at the implementation: we know exactly what it does |
+- Purity + immutability + parametric polymorphism = reasoning superpowers |
+
+---
+
 ### Thanks!

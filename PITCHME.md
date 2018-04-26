@@ -85,6 +85,21 @@ foo :: a -> a
 
 ---
 
+#### Let's Implement It
+
+```haskell
+foo :: a -> a
+```
+
+- Well, an "a" is passed into the function |
+- That is the only "a" we can know about |
+- There is only one implementation of this function |
+- This is the "identity" function |
+- It seems useless, but actually comes up a lot |
+
+---
+
+
 #### Type-Kwon-Do Revisited
 
 - Implement the function with the following signature:

@@ -1,5 +1,5 @@
-theme : night
+theme : simple
 theme-override : assets/css/PITCHME.css
-highlight : atom-one-dark
+highlight : atom-one-light
 transition : none
 published : true

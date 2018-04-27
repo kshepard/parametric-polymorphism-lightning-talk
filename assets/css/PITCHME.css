@@ -1,16 +1,23 @@
+/*
+ * GitPitch Slideshow Custom CSS Styling
+ *
+ * For details, visit Wiki:
+ * https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS
+ */
+
 body {
-  background: #000;
-  background-color: #000;
+  background: #fff;
+  background-color: #fff;
 }
 
 html:-webkit-full-screen-ancestor {
-  background: #000;
-  background-color: #000;
+  background: #fff;
+  background-color: #fff;
 }
 
 html:-moz-full-screen-ancestor {
-  background: #000;
-  background-color: #000;
+  background: #fff;
+  background-color: #fff;
 }
 
 .reveal pre {
@@ -35,7 +42,7 @@ html:-moz-full-screen-ancestor {
 }
 
 .reveal p span.slide-title {
-  color: white;
+  color: black;
   padding: 4px 15px;
   opacity: 0.75 !important;
   border-radius: 15px;
@@ -52,3 +59,35 @@ html:-moz-full-screen-ancestor {
     z-index: -10;
     width: 55%;
 }
+
+.reveal a.pro-link {
+    font-size: 0.5em;
+}
+
+.reveal a {
+    color: #e7ad52;
+}
+
+.reveal a:hover {
+    color: #f3d7ac;
+}
+
+.hljs {
+  background : none;
+}
+
+.white {
+  color: white;
+}
+
+#gp-logo img {
+  max-height: 2em;
+  max-width: none;
+}
+
+.gp-tip { font-size : 1.5em; }
+
+.gp-contact { font-size : 1.4em; }
+
+.gp-download { margin-left: 10px; }
+

@@ -52,8 +52,8 @@ foo i = 42
 foo :: a -> a
 ```
 
-- Here 'a' is a parametrically polymporhic type, which means it can represent any type.
-- There's nothing special about 'a', except that it starts with a lowercase letter.
+- Here the 'a's are parametrically polymporhic, which means they can represent any type
+- There's nothing special about 'a', except that it starts with a lowercase letter
 
 ---
 
